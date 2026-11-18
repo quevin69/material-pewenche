@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Qué es la hidatidosis?</title>
+<style>
+  :root{
+    --bg:#f6f1e7; --ink:#2a2620; --muted:#6b6356; --line:#e2d8c6;
+    --green:#2f5d46; --green-ink:#fff; --card:#fffdf8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{background:var(--green);color:var(--green-ink);padding:28px 20px 26px}
+  .wrap{max-width:980px;margin:0 auto}
+  .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin:0 0 8px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(26px,6vw,40px);line-height:1.12;margin:0 0 10px;text-wrap:balance}
+  header p.desc{margin:0;max-width:60ch;opacity:.95}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px}
+  main{padding:18px 12px 40px}
+  figure{margin:0 auto 22px;max-width:980px}
+  .pg{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:6px;background:var(--card);cursor:zoom-in;overflow:hidden;box-shadow:0 1px 3px rgba(60,45,20,.08)}
+  .pg img{display:block;width:100%;height:auto}
+  .pg:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+  figcaption{color:var(--muted);font-size:14px;text-align:center;margin-top:6px}
+  .dl{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:#fff;color:var(--green);font-weight:700;font-size:18px;text-decoration:none;padding:12px 20px;border-radius:10px;min-height:48px}
+  .dl:active{transform:translateY(1px)}
+  .dl small{font-weight:400;color:var(--muted);font-size:14px}
+  .back{color:#fff;opacity:.85;font-size:15px;text-decoration:none;display:inline-block;margin-bottom:14px}
+  footer a{color:var(--muted)}
+  footer{color:var(--muted);font-size:14px;text-align:center;padding:0 20px 36px}
+  /* visor ampliado */
+  #lb{position:fixed;inset:0;background:#15130f;display:none;flex-direction:column;z-index:10}
+  #lb.open{display:flex}
+  #lb .bar{display:flex;gap:6px;align-items:center;justify-content:space-between;padding:8px;background:#211e18;color:#f3ede2}
+  #lb .grp{display:flex;gap:6px;align-items:center}
+  #lb button{font:inherit;font-size:16px;min-width:44px;min-height:44px;padding:0 12px;border-radius:8px;border:1px solid #4a443a;background:#2d2922;color:#f3ede2;cursor:pointer}
+  #lb button:disabled{opacity:.35;cursor:default}
+  #lb .num{font-size:15px;min-width:60px;text-align:center}
+  #lb .scroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;display:flex}
+  #lb .scroll img{display:block;margin:auto;max-width:none;height:auto}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="back" href="../">‹ Ver todos los materiales</a>
+    <p class="kicker">Material educativo · Comunidad pewenche</p>
+    <h1>¿Qué es la hidatidosis?</h1>
+    <p class="desc">Cómo se contagia, cómo prevenirla, síntomas y contactos de salud.</p>
+    <a class="dl" href="https://zenodo.org/records/24352911/files/%C2%BFQu%C3%A9%20es%20la%20Hidatidosis.pdf?download=1">⬇ Descargar PDF <small>(7,9 MB)</small></a>
+  </div>
+</header>
+<div class="meta"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 18px;width:100%">
+  <span>2 páginas</span><span>Vista previa · toca una página para ampliarla</span>
+</div></div>
+<main>
+<figure><button class="pg" data-i="0" aria-label="Ampliar página 1 de 2"><img src="p-1.jpg" width="3200" height="886" alt="¿Qué es la hidatidosis?, página 1 de 2" decoding="async"></button><figcaption>Página 1 de 2</figcaption></figure>
+<figure><button class="pg" data-i="1" aria-label="Ampliar página 2 de 2"><img src="p-2.jpg" width="3200" height="886" alt="¿Qué es la hidatidosis?, página 2 de 2" decoding="async"></button><figcaption>Página 2 de 2</figcaption></figure>
+</main>
+<footer>Elaborado por Maira Llanquinao, Kevin Medina, Monserrat Toro<br>Asignatura Manejo de Cuencas Hidrográficas · Universidad de Concepción · Dra. Monica Ortiz<br>Este material también fue entregado en formato impreso. Respaldo permanente: <a href="https://doi.org/10.5281/zenodo.24352911">doi.org/10.5281/zenodo.24352911</a></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Página ampliada">
+  <div class="bar">
+    <div class="grp">
+      <button id="prev" aria-label="Página anterior">‹</button>
+      <span class="num" id="num"></span>
+      <button id="next" aria-label="Página siguiente">›</button>
+    </div>
+    <div class="grp">
+      <button id="out" aria-label="Alejar">−</button>
+      <button id="in" aria-label="Acercar">+</button>
+      <button id="close">Cerrar</button>
+    </div>
+  </div>
+  <div class="scroll" id="sc"><img id="big" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var pages = [{"src": "p-1.jpg", "w": 3200, "h": 886}, {"src": "p-2.jpg", "w": 3200, "h": 886}];
+  var lb = document.getElementById('lb'), big = document.getElementById('big'), sc = document.getElementById('sc');
+  var num = document.getElementById('num'), prev = document.getElementById('prev'), next = document.getElementById('next');
+  var cur = 0, zoom = 1, opener = null;
+  function fit(p){
+    var vw = sc.clientWidth, vh = sc.clientHeight;
+    // imágenes muy anchas (trípticos): ajustar a la altura para poder recorrerlas
+    if (p.w / p.h > 2 && vw < 900) return Math.max(vw, vh * p.w / p.h * 0.9);
+    return vw;
+  }
+  function render(){
+    var p = pages[cur];
+    if (big.getAttribute('src') !== p.src) big.src = p.src;
+    big.alt = document.title + ' — página ' + (cur + 1);
+    big.style.width = Math.round(fit(p) * zoom) + 'px';
+    num.textContent = pages.length > 1 ? (cur + 1) + ' / ' + pages.length : '';
+    prev.disabled = cur === 0; next.disabled = cur === pages.length - 1;
+    prev.style.visibility = next.style.visibility = pages.length > 1 ? 'visible' : 'hidden';
+  }
+  function show(i){ cur = i; zoom = 1; render(); sc.scrollTop = 0; sc.scrollLeft = 0; }
+  function setZoom(z){
+    var cx = (sc.scrollLeft + sc.clientWidth / 2) / sc.scrollWidth, cy = (sc.scrollTop + sc.clientHeight / 2) / sc.scrollHeight;
+    zoom = Math.min(5, Math.max(1, z)); render();
+    sc.scrollLeft = cx * sc.scrollWidth - sc.clientWidth / 2; sc.scrollTop = cy * sc.scrollHeight - sc.clientHeight / 2;
+  }
+  document.querySelectorAll('.pg').forEach(function(b){
+    b.addEventListener('click', function(){ opener = b; lb.classList.add('open'); document.body.style.overflow = 'hidden'; show(+b.dataset.i); document.getElementById('close').focus(); });
+  });
+  function close(){ lb.classList.remove('open'); document.body.style.overflow = ''; if (opener) opener.focus(); }
+  document.getElementById('close').onclick = close;
+  prev.onclick = function(){ if (cur > 0) show(cur - 1); };
+  next.onclick = function(){ if (cur < pages.length - 1) show(cur + 1); };
+  document.getElementById('in').onclick = function(){ setZoom(zoom * 1.5); };
+  document.getElementById('out').onclick = function(){ setZoom(zoom / 1.5); };
+  big.addEventListener('dblclick', function(){ setZoom(zoom > 1 ? 1 : 2.25); });
+  window.addEventListener('resize', function(){ if (lb.classList.contains('open')) render(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') prev.onclick();
+    else if (e.key === 'ArrowRight') next.onclick();
+    else if (e.key === '+' || e.key === '=') setZoom(zoom * 1.5);
+    else if (e.key === '-') setZoom(zoom / 1.5);
+  });
+})();
+</script>
+</body>
+</html>

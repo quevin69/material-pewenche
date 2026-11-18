@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de campo: árboles y arbustos</title>
+<style>
+  :root{
+    --bg:#f6f1e7; --ink:#2a2620; --muted:#6b6356; --line:#e2d8c6;
+    --green:#2f5d46; --green-ink:#fff; --card:#fffdf8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{background:var(--green);color:var(--green-ink);padding:28px 20px 26px}
+  .wrap{max-width:980px;margin:0 auto}
+  .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin:0 0 8px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(26px,6vw,40px);line-height:1.12;margin:0 0 10px;text-wrap:balance}
+  header p.desc{margin:0;max-width:60ch;opacity:.95}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px}
+  main{padding:18px 12px 40px}
+  figure{margin:0 auto 22px;max-width:980px}
+  .pg{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:6px;background:var(--card);cursor:zoom-in;overflow:hidden;box-shadow:0 1px 3px rgba(60,45,20,.08)}
+  .pg img{display:block;width:100%;height:auto}
+  .pg:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+  figcaption{color:var(--muted);font-size:14px;text-align:center;margin-top:6px}
+  .dl{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:#fff;color:var(--green);font-weight:700;font-size:18px;text-decoration:none;padding:12px 20px;border-radius:10px;min-height:48px}
+  .dl:active{transform:translateY(1px)}
+  .dl small{font-weight:400;color:var(--muted);font-size:14px}
+  .back{color:#fff;opacity:.85;font-size:15px;text-decoration:none;display:inline-block;margin-bottom:14px}
+  footer a{color:var(--muted)}
+  footer{color:var(--muted);font-size:14px;text-align:center;padding:0 20px 36px}
+  /* visor ampliado */
+  #lb{position:fixed;inset:0;background:#15130f;display:none;flex-direction:column;z-index:10}
+  #lb.open{display:flex}
+  #lb .bar{display:flex;gap:6px;align-items:center;justify-content:space-between;padding:8px;background:#211e18;color:#f3ede2}
+  #lb .grp{display:flex;gap:6px;align-items:center}
+  #lb button{font:inherit;font-size:16px;min-width:44px;min-height:44px;padding:0 12px;border-radius:8px;border:1px solid #4a443a;background:#2d2922;color:#f3ede2;cursor:pointer}
+  #lb button:disabled{opacity:.35;cursor:default}
+  #lb .num{font-size:15px;min-width:60px;text-align:center}
+  #lb .scroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;display:flex}
+  #lb .scroll img{display:block;margin:auto;max-width:none;height:auto}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="back" href="../">‹ Ver todos los materiales</a>
+    <p class="kicker">Material educativo · Comunidad pewenche</p>
+    <h1>Guía de campo: árboles y arbustos</h1>
+    <p class="desc">Árboles, arbustos y hierbas con su nombre común, científico y pewenche, descripción y usos.</p>
+    <a class="dl" href="https://zenodo.org/records/24352917/files/Guia%20de%20Campo.pdf?download=1">⬇ Descargar PDF <small>(30,4 MB)</small></a>
+  </div>
+</header>
+<div class="meta"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 18px;width:100%">
+  <span>50 páginas</span><span>Vista previa · toca una página para ampliarla</span>
+</div></div>
+<main>
+<figure><button class="pg" data-i="0" aria-label="Ampliar página 1 de 50"><img src="p-01.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 1 de 50" decoding="async"></button><figcaption>Página 1 de 50</figcaption></figure>
+<figure><button class="pg" data-i="1" aria-label="Ampliar página 2 de 50"><img src="p-02.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 2 de 50" decoding="async"></button><figcaption>Página 2 de 50</figcaption></figure>
+<figure><button class="pg" data-i="2" aria-label="Ampliar página 3 de 50"><img src="p-03.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 3 de 50" loading="lazy" decoding="async"></button><figcaption>Página 3 de 50</figcaption></figure>
+<figure><button class="pg" data-i="3" aria-label="Ampliar página 4 de 50"><img src="p-04.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 4 de 50" loading="lazy" decoding="async"></button><figcaption>Página 4 de 50</figcaption></figure>
+<figure><button class="pg" data-i="4" aria-label="Ampliar página 5 de 50"><img src="p-05.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 5 de 50" loading="lazy" decoding="async"></button><figcaption>Página 5 de 50</figcaption></figure>
+<figure><button class="pg" data-i="5" aria-label="Ampliar página 6 de 50"><img src="p-06.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 6 de 50" loading="lazy" decoding="async"></button><figcaption>Página 6 de 50</figcaption></figure>
+<figure><button class="pg" data-i="6" aria-label="Ampliar página 7 de 50"><img src="p-07.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 7 de 50" loading="lazy" decoding="async"></button><figcaption>Página 7 de 50</figcaption></figure>
+<figure><button class="pg" data-i="7" aria-label="Ampliar página 8 de 50"><img src="p-08.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 8 de 50" loading="lazy" decoding="async"></button><figcaption>Página 8 de 50</figcaption></figure>
+<figure><button class="pg" data-i="8" aria-label="Ampliar página 9 de 50"><img src="p-09.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 9 de 50" loading="lazy" decoding="async"></button><figcaption>Página 9 de 50</figcaption></figure>
+<figure><button class="pg" data-i="9" aria-label="Ampliar página 10 de 50"><img src="p-10.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 10 de 50" loading="lazy" decoding="async"></button><figcaption>Página 10 de 50</figcaption></figure>
+<figure><button class="pg" data-i="10" aria-label="Ampliar página 11 de 50"><img src="p-11.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 11 de 50" loading="lazy" decoding="async"></button><figcaption>Página 11 de 50</figcaption></figure>
+<figure><button class="pg" data-i="11" aria-label="Ampliar página 12 de 50"><img src="p-12.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 12 de 50" loading="lazy" decoding="async"></button><figcaption>Página 12 de 50</figcaption></figure>
+<figure><button class="pg" data-i="12" aria-label="Ampliar página 13 de 50"><img src="p-13.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 13 de 50" loading="lazy" decoding="async"></button><figcaption>Página 13 de 50</figcaption></figure>
+<figure><button class="pg" data-i="13" aria-label="Ampliar página 14 de 50"><img src="p-14.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 14 de 50" loading="lazy" decoding="async"></button><figcaption>Página 14 de 50</figcaption></figure>
+<figure><button class="pg" data-i="14" aria-label="Ampliar página 15 de 50"><img src="p-15.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 15 de 50" loading="lazy" decoding="async"></button><figcaption>Página 15 de 50</figcaption></figure>
+<figure><button class="pg" data-i="15" aria-label="Ampliar página 16 de 50"><img src="p-16.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 16 de 50" loading="lazy" decoding="async"></button><figcaption>Página 16 de 50</figcaption></figure>
+<figure><button class="pg" data-i="16" aria-label="Ampliar página 17 de 50"><img src="p-17.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 17 de 50" loading="lazy" decoding="async"></button><figcaption>Página 17 de 50</figcaption></figure>
+<figure><button class="pg" data-i="17" aria-label="Ampliar página 18 de 50"><img src="p-18.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 18 de 50" loading="lazy" decoding="async"></button><figcaption>Página 18 de 50</figcaption></figure>
+<figure><button class="pg" data-i="18" aria-label="Ampliar página 19 de 50"><img src="p-19.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 19 de 50" loading="lazy" decoding="async"></button><figcaption>Página 19 de 50</figcaption></figure>
+<figure><button class="pg" data-i="19" aria-label="Ampliar página 20 de 50"><img src="p-20.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 20 de 50" loading="lazy" decoding="async"></button><figcaption>Página 20 de 50</figcaption></figure>
+<figure><button class="pg" data-i="20" aria-label="Ampliar página 21 de 50"><img src="p-21.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 21 de 50" loading="lazy" decoding="async"></button><figcaption>Página 21 de 50</figcaption></figure>
+<figure><button class="pg" data-i="21" aria-label="Ampliar página 22 de 50"><img src="p-22.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 22 de 50" loading="lazy" decoding="async"></button><figcaption>Página 22 de 50</figcaption></figure>
+<figure><button class="pg" data-i="22" aria-label="Ampliar página 23 de 50"><img src="p-23.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 23 de 50" loading="lazy" decoding="async"></button><figcaption>Página 23 de 50</figcaption></figure>
+<figure><button class="pg" data-i="23" aria-label="Ampliar página 24 de 50"><img src="p-24.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 24 de 50" loading="lazy" decoding="async"></button><figcaption>Página 24 de 50</figcaption></figure>
+<figure><button class="pg" data-i="24" aria-label="Ampliar página 25 de 50"><img src="p-25.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 25 de 50" loading="lazy" decoding="async"></button><figcaption>Página 25 de 50</figcaption></figure>
+<figure><button class="pg" data-i="25" aria-label="Ampliar página 26 de 50"><img src="p-26.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 26 de 50" loading="lazy" decoding="async"></button><figcaption>Página 26 de 50</figcaption></figure>
+<figure><button class="pg" data-i="26" aria-label="Ampliar página 27 de 50"><img src="p-27.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 27 de 50" loading="lazy" decoding="async"></button><figcaption>Página 27 de 50</figcaption></figure>
+<figure><button class="pg" data-i="27" aria-label="Ampliar página 28 de 50"><img src="p-28.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 28 de 50" loading="lazy" decoding="async"></button><figcaption>Página 28 de 50</figcaption></figure>
+<figure><button class="pg" data-i="28" aria-label="Ampliar página 29 de 50"><img src="p-29.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 29 de 50" loading="lazy" decoding="async"></button><figcaption>Página 29 de 50</figcaption></figure>
+<figure><button class="pg" data-i="29" aria-label="Ampliar página 30 de 50"><img src="p-30.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 30 de 50" loading="lazy" decoding="async"></button><figcaption>Página 30 de 50</figcaption></figure>
+<figure><button class="pg" data-i="30" aria-label="Ampliar página 31 de 50"><img src="p-31.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 31 de 50" loading="lazy" decoding="async"></button><figcaption>Página 31 de 50</figcaption></figure>
+<figure><button class="pg" data-i="31" aria-label="Ampliar página 32 de 50"><img src="p-32.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 32 de 50" loading="lazy" decoding="async"></button><figcaption>Página 32 de 50</figcaption></figure>
+<figure><button class="pg" data-i="32" aria-label="Ampliar página 33 de 50"><img src="p-33.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 33 de 50" loading="lazy" decoding="async"></button><figcaption>Página 33 de 50</figcaption></figure>
+<figure><button class="pg" data-i="33" aria-label="Ampliar página 34 de 50"><img src="p-34.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 34 de 50" loading="lazy" decoding="async"></button><figcaption>Página 34 de 50</figcaption></figure>
+<figure><button class="pg" data-i="34" aria-label="Ampliar página 35 de 50"><img src="p-35.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 35 de 50" loading="lazy" decoding="async"></button><figcaption>Página 35 de 50</figcaption></figure>
+<figure><button class="pg" data-i="35" aria-label="Ampliar página 36 de 50"><img src="p-36.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 36 de 50" loading="lazy" decoding="async"></button><figcaption>Página 36 de 50</figcaption></figure>
+<figure><button class="pg" data-i="36" aria-label="Ampliar página 37 de 50"><img src="p-37.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 37 de 50" loading="lazy" decoding="async"></button><figcaption>Página 37 de 50</figcaption></figure>
+<figure><button class="pg" data-i="37" aria-label="Ampliar página 38 de 50"><img src="p-38.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 38 de 50" loading="lazy" decoding="async"></button><figcaption>Página 38 de 50</figcaption></figure>
+<figure><button class="pg" data-i="38" aria-label="Ampliar página 39 de 50"><img src="p-39.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 39 de 50" loading="lazy" decoding="async"></button><figcaption>Página 39 de 50</figcaption></figure>
+<figure><button class="pg" data-i="39" aria-label="Ampliar página 40 de 50"><img src="p-40.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 40 de 50" loading="lazy" decoding="async"></button><figcaption>Página 40 de 50</figcaption></figure>
+<figure><button class="pg" data-i="40" aria-label="Ampliar página 41 de 50"><img src="p-41.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 41 de 50" loading="lazy" decoding="async"></button><figcaption>Página 41 de 50</figcaption></figure>
+<figure><button class="pg" data-i="41" aria-label="Ampliar página 42 de 50"><img src="p-42.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 42 de 50" loading="lazy" decoding="async"></button><figcaption>Página 42 de 50</figcaption></figure>
+<figure><button class="pg" data-i="42" aria-label="Ampliar página 43 de 50"><img src="p-43.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 43 de 50" loading="lazy" decoding="async"></button><figcaption>Página 43 de 50</figcaption></figure>
+<figure><button class="pg" data-i="43" aria-label="Ampliar página 44 de 50"><img src="p-44.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 44 de 50" loading="lazy" decoding="async"></button><figcaption>Página 44 de 50</figcaption></figure>
+<figure><button class="pg" data-i="44" aria-label="Ampliar página 45 de 50"><img src="p-45.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 45 de 50" loading="lazy" decoding="async"></button><figcaption>Página 45 de 50</figcaption></figure>
+<figure><button class="pg" data-i="45" aria-label="Ampliar página 46 de 50"><img src="p-46.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 46 de 50" loading="lazy" decoding="async"></button><figcaption>Página 46 de 50</figcaption></figure>
+<figure><button class="pg" data-i="46" aria-label="Ampliar página 47 de 50"><img src="p-47.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 47 de 50" loading="lazy" decoding="async"></button><figcaption>Página 47 de 50</figcaption></figure>
+<figure><button class="pg" data-i="47" aria-label="Ampliar página 48 de 50"><img src="p-48.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 48 de 50" loading="lazy" decoding="async"></button><figcaption>Página 48 de 50</figcaption></figure>
+<figure><button class="pg" data-i="48" aria-label="Ampliar página 49 de 50"><img src="p-49.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 49 de 50" loading="lazy" decoding="async"></button><figcaption>Página 49 de 50</figcaption></figure>
+<figure><button class="pg" data-i="49" aria-label="Ampliar página 50 de 50"><img src="p-50.jpg" width="1000" height="1538" alt="Guía de campo: árboles y arbustos, página 50 de 50" loading="lazy" decoding="async"></button><figcaption>Página 50 de 50</figcaption></figure>
+</main>
+<footer>Elaborado por Renato Astete, Guillermo Cárdenas, Miguel Oyarzun<br>Asignatura Manejo de Cuencas Hidrográficas · Universidad de Concepción · Dra. Monica Ortiz<br>Este material también fue entregado en formato impreso. Respaldo permanente: <a href="https://doi.org/10.5281/zenodo.24352917">doi.org/10.5281/zenodo.24352917</a></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Página ampliada">
+  <div class="bar">
+    <div class="grp">
+      <button id="prev" aria-label="Página anterior">‹</button>
+      <span class="num" id="num"></span>
+      <button id="next" aria-label="Página siguiente">›</button>
+    </div>
+    <div class="grp">
+      <button id="out" aria-label="Alejar">−</button>
+      <button id="in" aria-label="Acercar">+</button>
+      <button id="close">Cerrar</button>
+    </div>
+  </div>
+  <div class="scroll" id="sc"><img id="big" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var pages = [{"src": "p-01.jpg", "w": 1000, "h": 1538}, {"src": "p-02.jpg", "w": 1000, "h": 1538}, {"src": "p-03.jpg", "w": 1000, "h": 1538}, {"src": "p-04.jpg", "w": 1000, "h": 1538}, {"src": "p-05.jpg", "w": 1000, "h": 1538}, {"src": "p-06.jpg", "w": 1000, "h": 1538}, {"src": "p-07.jpg", "w": 1000, "h": 1538}, {"src": "p-08.jpg", "w": 1000, "h": 1538}, {"src": "p-09.jpg", "w": 1000, "h": 1538}, {"src": "p-10.jpg", "w": 1000, "h": 1538}, {"src": "p-11.jpg", "w": 1000, "h": 1538}, {"src": "p-12.jpg", "w": 1000, "h": 1538}, {"src": "p-13.jpg", "w": 1000, "h": 1538}, {"src": "p-14.jpg", "w": 1000, "h": 1538}, {"src": "p-15.jpg", "w": 1000, "h": 1538}, {"src": "p-16.jpg", "w": 1000, "h": 1538}, {"src": "p-17.jpg", "w": 1000, "h": 1538}, {"src": "p-18.jpg", "w": 1000, "h": 1538}, {"src": "p-19.jpg", "w": 1000, "h": 1538}, {"src": "p-20.jpg", "w": 1000, "h": 1538}, {"src": "p-21.jpg", "w": 1000, "h": 1538}, {"src": "p-22.jpg", "w": 1000, "h": 1538}, {"src": "p-23.jpg", "w": 1000, "h": 1538}, {"src": "p-24.jpg", "w": 1000, "h": 1538}, {"src": "p-25.jpg", "w": 1000, "h": 1538}, {"src": "p-26.jpg", "w": 1000, "h": 1538}, {"src": "p-27.jpg", "w": 1000, "h": 1538}, {"src": "p-28.jpg", "w": 1000, "h": 1538}, {"src": "p-29.jpg", "w": 1000, "h": 1538}, {"src": "p-30.jpg", "w": 1000, "h": 1538}, {"src": "p-31.jpg", "w": 1000, "h": 1538}, {"src": "p-32.jpg", "w": 1000, "h": 1538}, {"src": "p-33.jpg", "w": 1000, "h": 1538}, {"src": "p-34.jpg", "w": 1000, "h": 1538}, {"src": "p-35.jpg", "w": 1000, "h": 1538}, {"src": "p-36.jpg", "w": 1000, "h": 1538}, {"src": "p-37.jpg", "w": 1000, "h": 1538}, {"src": "p-38.jpg", "w": 1000, "h": 1538}, {"src": "p-39.jpg", "w": 1000, "h": 1538}, {"src": "p-40.jpg", "w": 1000, "h": 1538}, {"src": "p-41.jpg", "w": 1000, "h": 1538}, {"src": "p-42.jpg", "w": 1000, "h": 1538}, {"src": "p-43.jpg", "w": 1000, "h": 1538}, {"src": "p-44.jpg", "w": 1000, "h": 1538}, {"src": "p-45.jpg", "w": 1000, "h": 1538}, {"src": "p-46.jpg", "w": 1000, "h": 1538}, {"src": "p-47.jpg", "w": 1000, "h": 1538}, {"src": "p-48.jpg", "w": 1000, "h": 1538}, {"src": "p-49.jpg", "w": 1000, "h": 1538}, {"src": "p-50.jpg", "w": 1000, "h": 1538}];
+  var lb = document.getElementById('lb'), big = document.getElementById('big'), sc = document.getElementById('sc');
+  var num = document.getElementById('num'), prev = document.getElementById('prev'), next = document.getElementById('next');
+  var cur = 0, zoom = 1, opener = null;
+  function fit(p){
+    var vw = sc.clientWidth, vh = sc.clientHeight;
+    // imágenes muy anchas (trípticos): ajustar a la altura para poder recorrerlas
+    if (p.w / p.h > 2 && vw < 900) return Math.max(vw, vh * p.w / p.h * 0.9);
+    return vw;
+  }
+  function render(){
+    var p = pages[cur];
+    if (big.getAttribute('src') !== p.src) big.src = p.src;
+    big.alt = document.title + ' — página ' + (cur + 1);
+    big.style.width = Math.round(fit(p) * zoom) + 'px';
+    num.textContent = pages.length > 1 ? (cur + 1) + ' / ' + pages.length : '';
+    prev.disabled = cur === 0; next.disabled = cur === pages.length - 1;
+    prev.style.visibility = next.style.visibility = pages.length > 1 ? 'visible' : 'hidden';
+  }
+  function show(i){ cur = i; zoom = 1; render(); sc.scrollTop = 0; sc.scrollLeft = 0; }
+  function setZoom(z){
+    var cx = (sc.scrollLeft + sc.clientWidth / 2) / sc.scrollWidth, cy = (sc.scrollTop + sc.clientHeight / 2) / sc.scrollHeight;
+    zoom = Math.min(5, Math.max(1, z)); render();
+    sc.scrollLeft = cx * sc.scrollWidth - sc.clientWidth / 2; sc.scrollTop = cy * sc.scrollHeight - sc.clientHeight / 2;
+  }
+  document.querySelectorAll('.pg').forEach(function(b){
+    b.addEventListener('click', function(){ opener = b; lb.classList.add('open'); document.body.style.overflow = 'hidden'; show(+b.dataset.i); document.getElementById('close').focus(); });
+  });
+  function close(){ lb.classList.remove('open'); document.body.style.overflow = ''; if (opener) opener.focus(); }
+  document.getElementById('close').onclick = close;
+  prev.onclick = function(){ if (cur > 0) show(cur - 1); };
+  next.onclick = function(){ if (cur < pages.length - 1) show(cur + 1); };
+  document.getElementById('in').onclick = function(){ setZoom(zoom * 1.5); };
+  document.getElementById('out').onclick = function(){ setZoom(zoom / 1.5); };
+  big.addEventListener('dblclick', function(){ setZoom(zoom > 1 ? 1 : 2.25); });
+  window.addEventListener('resize', function(){ if (lb.classList.contains('open')) render(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') prev.onclick();
+    else if (e.key === 'ArrowRight') next.onclick();
+    else if (e.key === '+' || e.key === '=') setZoom(zoom * 1.5);
+    else if (e.key === '-') setZoom(zoom / 1.5);
+  });
+})();
+</script>
+</body>
+</html>
